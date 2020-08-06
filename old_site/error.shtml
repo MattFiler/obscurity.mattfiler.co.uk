@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Cannot Access Page</title>
+
+	<style type="text/css">
+	body {
+		background: #363636;
+		background-style: cover;
+		background-position: fixed;
+		font-family: Helvetica, arial, sans-serif;
+		color: #ccc;
+	}
+	body a{
+		color: #ddd;
+		text-decoration: none;	
+	}
+	body a:active{
+		color: #999;
+		text-decoration: none;	
+	}
+	.alert-container {
+		background: url(/error_textbox.png);
+		width: 918px;
+		height: 142px;
+		margin: 0px auto 0px;
+	}
+	.alert-inner {
+		padding: 24px 0px 0px 209px;
+	}
+	.alert-heading {
+		font-size: 50px;
+		font-weight: bold;
+		line-height: 50px;
+	}
+	.alert-subheading {
+		margin-top: 8px;
+		font-size: 23px;
+		line-height: 28px;
+	}
+	.redirect {
+		width: 918px;
+		margin: 24px auto 0px;
+		font-size: 14px;
+		line-height: 14px;
+		text-align: center;
+	}
+	.redirect a {
+		color: #ffb300;
+		text-decoration: none;
+	}
+	
+* { margin: 0; padding: 0; }
+#page{display:table;overflow:hidden;margin:0px auto;}
+*:first-child+html #page {position:relative;}/*ie7*/
+* html #page{position:relative;}/*ie6*/
+
+#content_container{display:table-cell;vertical-align: middle;}
+*:first-child+html #content_container{position:absolute;top:50%;}/*ie7*/
+* html #content_container{position:absolute;top:50%;}/*ie6*/
+
+*:first-child+html #content{position:relative;top:-50%;}/*ie7*/
+* html #content{position:relative;top:-50%;}/*ie6*/
+
+html,body{height:100%;}
+#page{height:100%;width:465px;}
+
+	</style>
+</head>
+<body>
+<div id="page">
+       <div id="content_container">
+               <div id="content">
+	<div class="alert-container">
+		<div class="alert-inner">
+			<div class="alert-heading"><font color="white">Error Accessing Page</font></div>
+			<div class="alert-subheading">Sorry, you currently can't get to the place you are looking for.</div>
+		</div>
+	</div>
+	<div class="redirect">Hosted on Matt Filer Films servers running Apache/2.2.22 (Ubuntu) Server.</div>
+               </div>
+       </div>
+</div>
+</body>
+</html>
